@@ -1,17 +1,33 @@
-﻿# REGISSION Testing Results
+# REGISSION Testing Results
 
 ## Move Detection Accuracy
 
-Documented final result: **9/10 = 90%**. The failed scenario was black king-side castling under strong direct lamp glare, which visually interfered with king/rook movement detection.
+The documented final move-detection evaluation used 10 test scenarios.
 
-## Average Processing Latency
+```text
+Correct detections = 9
+Total scenarios    = 10
 
-**549.03 ms** after a usable stable board state is available.
+Accuracy = 9 / 10 x 100
+Accuracy = 90%
+```
 
-## Coverage
+Nine scenarios were successfully detected.
 
-Testing covered normal moves, knight/bishop movement, captures, castling, checkmate notation, illegal-move rejection, hand/board stability, API storage and dashboard updates.
+The failed scenario was black king-side castling under strong direct lamp glare, which visually interfered with detection of the king and rook movement.
 
-## Limitations
+## Tested Functions
 
-Lighting, direct glare, camera angle, board/camera movement, obstruction and unstable calibration can affect detection.
+Testing included normal pawn movement, knight movement, bishop movement, captures, castling, checkmate notation, illegal move rejection, board/hand stability handling and dashboard updates.
+
+## Latency
+
+Average measured processing latency:
+
+**549.03 ms**
+
+The latency represents processing and communication after a usable stable board state is available.
+
+## Detection Limitations
+
+Performance can be affected by lighting, direct glare, camera angle, board movement, camera movement, hand obstruction and unstable board calibration.
