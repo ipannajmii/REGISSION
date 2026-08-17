@@ -8,14 +8,14 @@ The final system combines **Raspberry Pi 5, YOLOv8, OpenCV, python-chess, Larave
 
 > **VISION BEYOND THE BOARD.**
 
-## Live System
+## Live System 🌐
 
 **Hosted REGISSION website:**  
 https://regission-143-198-196-49.sslip.io/
 
 The public web application is hosted on DigitalOcean. The Raspberry Pi remains the physical edge-computing device responsible for camera processing and move detection.
 
-## Recognition
+## Recognition 🏆
 
 **Best Project Award - UiTM C2PI Final Year Project Exhibition**
 
@@ -26,7 +26,7 @@ REGISSION was developed progressively from **Semester 3** before becoming the fi
 
 The project involved repeated machine-learning training, dataset preparation, computer-vision tuning, Raspberry Pi integration, networking, backend and frontend development, testing, troubleshooting and cloud deployment.
 
-## Project Overview
+## Project Overview 📖
 
 Manual chess notation can be time-consuming and prone to human error.
 
@@ -45,7 +45,7 @@ The final implementation does not rely on YOLO alone. It combines:
 - SAN notation generation
 - Laravel REST API communication
 
-## Final Detection Pipeline
+## Final Detection Pipeline 🔄
 
 ```text
 Physical Chessboard
@@ -94,7 +94,7 @@ YOLOv8 Piece Detection      OpenCV Visual Difference
               Next.js Dashboard
 ```
 
-## Main Features
+## Main Features ✨
 
 - AUTO physical move detection
 - Resume Detect backup/manual trigger
@@ -112,9 +112,9 @@ YOLOv8 Piece Detection      OpenCV Visual Difference
 - OpenAI move explanation
 - DigitalOcean deployment
 
-## Technology Stack
+## Technology Stack 🛠️
 
-### Edge / Computer Vision
+### Edge / Computer Vision 📷
 
 - Raspberry Pi 5
 - Raspberry Pi Camera Module
@@ -125,7 +125,7 @@ YOLOv8 Piece Detection      OpenCV Visual Difference
 - python-chess
 - Flask
 
-### Backend
+### Backend ⚙️
 
 - Laravel
 - PHP
@@ -133,21 +133,21 @@ YOLOv8 Piece Detection      OpenCV Visual Difference
 - REST API
 - MySQL
 
-### Frontend
+### Frontend 💻
 
 - Next.js
 - React
 - TypeScript
 - Tailwind CSS
 
-### Chess Analysis
+### Chess Analysis ♜
 
 - Stockfish 18
 - WebAssembly
 - Web Worker
 - OpenAI API
 
-## Machine Learning Models
+## Machine Learning Models 🤖
 
 The final Raspberry Pi detector loads:
 
@@ -166,15 +166,15 @@ https://app.roboflow.com/irfans-workspace-rnsjw/regission-chess-pieces/
 
 The same REGISSION dataset project was used during development of the board-segmentation and chess-piece detection components.
 
-## Detection Modes
+## Detection Modes 🎯
 
-### AUTO Detection
+### AUTO Detection ⚡
 
 AUTO Detection is the primary final workflow.
 
 The Raspberry Pi continuously evaluates the board and attempts to commit a move after the physical board reaches a usable stable state and the visual evidence agrees with a legal transition.
 
-### Resume Detect
+### Resume Detect 🔁
 
 Resume Detect remains available as a **backup/manual workflow**.
 
@@ -182,9 +182,9 @@ It allows the user to explicitly request another detection attempt when AUTO is 
 
 Both workflows use the same underlying YOLOv8, OpenCV and python-chess detection pipeline.
 
-## Testing Results
+## Testing Results 🧪
 
-### Move Detection Accuracy
+### Move Detection Accuracy 🎯
 
 The documented final move-detection evaluation used **10 scenarios**.
 
@@ -194,13 +194,13 @@ The documented final move-detection evaluation used **10 scenarios**.
 
 The failed scenario involved **black king-side castling** under strong direct lamp glare, which visually interfered with detection of the king and rook movement.
 
-### Average Processing Latency
+### Average Processing Latency ⏱️
 
 **549.03 ms**
 
 This timing represents the processing and communication period after a usable stable board state is available.
 
-## Networking and Data Communication
+## Networking and Data Communication 🌐
 
 The Raspberry Pi operates as an edge device and communicates with the hosted Laravel backend using HTTP REST APIs.
 
@@ -218,7 +218,7 @@ The network architecture supports:
 
 Computer-vision processing remains at the edge, reducing unnecessary raw-image transmission to the cloud.
 
-## System Architecture
+## System Architecture 🏗️
 
 ```text
 Physical Chessboard
@@ -241,7 +241,7 @@ Next.js Dashboard
         +----------> OpenAI Move Explanation
 ```
 
-## Repository Structure
+## Repository Structure 📁
 
 ```text
 REGISSION/
@@ -256,7 +256,7 @@ REGISSION/
 `-- assets/              Project screenshots and diagrams
 ```
 
-## Security
+## Security 🔐
 
 Production credentials are **not included** in this repository.
 
@@ -271,7 +271,7 @@ Sensitive values are configured through environment variables, including:
 
 Use the provided `.env.example` files and never commit production `.env` files.
 
-## Documentation
+## Documentation 📚
 
 - [System Architecture](https://github.com/ipannajmii/REGISSION/blob/main/docs/architecture.md?plain=1)
 - [Detection Pipeline](https://github.com/ipannajmii/REGISSION/blob/main/docs/detection-pipeline.md?plain=1)
@@ -279,13 +279,13 @@ Use the provided `.env.example` files and never commit production `.env` files.
 - [Testing Results](https://github.com/ipannajmii/REGISSION/blob/main/docs/testing.md?plain=1)
 - [Machine Learning](https://github.com/ipannajmii/REGISSION/blob/main/machine-learning/README.md?plain=1)
 
-## Project Journey
+## Project Journey 🚀
 
 REGISSION began during **Semester 3** and evolved through repeated machine-learning training, dataset annotation, Raspberry Pi experimentation, camera calibration, computer vision, automatic detection development, REST API integration, networking, database design, frontend development, cloud hosting, testing and optimization.
 
 The final implementation received the **Best Project Award at the UiTM CS255 C2PI Final Year Project Exhibition**.
 
-## Author
+## Author 👨‍💻
 
 **Irfan Nazmi bin Mohd Salikhin**
 
@@ -293,7 +293,7 @@ Bachelor of Computer Science (Hons.) Data Communication and Networking
 CS255  
 Universiti Teknologi MARA (UiTM)
 
-## Disclaimer
+## Disclaimer ℹ️
 
 REGISSION was developed as an academic Final Year Project.
 
