@@ -1,6 +1,6 @@
-﻿# REGISSION
+﻿# REGISSION 👑👁️
 
-## Smart IoT Chessboard with Camera-Based Move Detection
+## Smart IoT Chessboard with Camera-Based Move Detection ♟️
 
 **REGISSION** is a vision-based Smart IoT chessboard that automatically detects moves made on a conventional physical chessboard and records them digitally.
 
