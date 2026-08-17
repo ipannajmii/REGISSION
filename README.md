@@ -1,4 +1,4 @@
-# REGISSION
+﻿# REGISSION
 
 ## Smart IoT Chessboard with Camera-Based Move Detection
 
@@ -273,11 +273,11 @@ Use the provided `.env.example` files and never commit production `.env` files.
 
 ## Documentation
 
-- [System Architecture](./docs/architecture.md)
-- [Detection Pipeline](./docs/detection-pipeline.md)
-- [Networking and Data Communication](./docs/networking.md)
-- [Testing Results](./docs/testing.md)
-- [Machine Learning](./machine-learning/README.md)
+- [System Architecture](https://github.com/ipannajmii/REGISSION/blob/main/docs/architecture.md?plain=1)
+- [Detection Pipeline](https://github.com/ipannajmii/REGISSION/blob/main/docs/detection-pipeline.md?plain=1)
+- [Networking and Data Communication](https://github.com/ipannajmii/REGISSION/blob/main/docs/networking.md?plain=1)
+- [Testing Results](https://github.com/ipannajmii/REGISSION/blob/main/docs/testing.md?plain=1)
+- [Machine Learning](https://github.com/ipannajmii/REGISSION/blob/main/machine-learning/README.md?plain=1)
 
 ## Project Journey
 
