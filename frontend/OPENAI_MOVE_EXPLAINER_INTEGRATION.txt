@@ -1,0 +1,48 @@
+REGISSION ANALYSIS PAGE INTEGRATION
+====================================
+
+1. Install the SDK from the REGISSION web folder:
+
+   cd C:\laragon\www\regission-web
+   npm install openai
+
+2. Copy these files:
+
+   src\app\api\analysis\explain\route.ts
+   src\components\MoveExplanation.tsx
+
+3. Add to C:\laragon\www\regission-web\.env.local:
+
+   OPENAI_API_KEY=YOUR_REAL_OPENAI_API_KEY
+   OPENAI_MODEL=gpt-5-mini
+
+4. At the top of your analysis page, add:
+
+   import MoveExplanation from "@/components/MoveExplanation";
+
+5. Replace the current GAME INFO block with this component. Map the prop
+   values to the variables already used by your page:
+
+   <MoveExplanation
+     gameTitle={selectedGame?.name ?? "REGISSION game"}
+     fen={currentFen}
+     pgn={pgn}
+     currentMove={currentMoveLabel}
+     bestMove={bestMove}
+     evaluation={evaluationText}
+     depth={depth}
+     principalVariation={bestLine}
+   />
+
+   Your variable names may differ. Use the same values that are already
+   displayed in the Best Move, Move Info, Depth, Best Line, FEN and PGN boxes.
+
+6. Restart Next.js after changing .env.local:
+
+   cd C:\laragon\www\regission-web
+   npm run dev
+
+SECURITY
+========
+The API key must exist only in .env.local or another server-side secret store.
+Do not name it NEXT_PUBLIC_OPENAI_API_KEY and do not place it in page.tsx.

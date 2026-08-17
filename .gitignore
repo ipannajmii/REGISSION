@@ -1,0 +1,8 @@
+
+# REGISSION runtime / user data
+backend/storage/app/public/avatars/*
+!backend/storage/app/public/avatars/.gitignore
+backend/storage/app/regission_duplicate_cleanup_*.json
+
+# Local calibration/runtime overrides
+raspberry-pi/.regission-env
